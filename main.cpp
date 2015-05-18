@@ -7,7 +7,9 @@ int main(int argc, char** argv)
 {
     cv::Mat frame;
     int c;
+
     CvCapture *capture = cvCaptureFromCAM(0);
+
     for(;;)
     {
         frame = cvQueryFrame(capture);
